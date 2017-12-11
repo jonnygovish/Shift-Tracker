@@ -1,5 +1,5 @@
 # Shift-Tracker
-#### A platform where employees can keep track of their shifts, and swap shifts among each other, preferably at a fee. 
+A platform where employees can keep track of their shifts, and swap shifts among each other, preferably at a fee. 
 
 
 ## User Story
@@ -8,6 +8,7 @@ As a user I would be able to
 * View my shifts for each day
 * View other peoples shift
 * Request other people to cover my shift.
+<br>
 As an admin:
 * Create shift schedule for all employees
 * Delete and update a schedule
@@ -23,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Python
+Python3.6
 ```
 ```
 
