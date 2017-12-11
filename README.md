@@ -8,8 +8,7 @@ As a user I would be able to
 * View my shifts for each day
 * View other peoples shift
 * Request other people to cover my shift.
-<br>
-As an admin:
+As an admin
 * Create shift schedule for all employees
 * Delete and update a schedule
 
