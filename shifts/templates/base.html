@@ -1,5 +1,6 @@
 {% load bootstrap3 %}
 {% load static %}
+{% load fullcalendar_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Shift Tacker</title>
+  {% fullcalendar_css %}
+  {% fullcalendar_print_css %}
+  {% fullcalendar_jquery %}
+  {% fullcalendar_jquery_ui %}
+  {% fullcalendar_javascript %}
+
+  {% calendar_init event_url %}
   {% block styles%}
-    {% bootstrap_css%}
+  {% bootstrap_css%}
+  <link rel="stylesheet" href="{% static 'css/styles.css'%} ">
   {% endblock %}
 </head>
-<body>
+<body style="background-color: #eee; margin-top: 75px;">
   
     {% include "navbar.html" %}
     
@@ -20,6 +29,8 @@
     </div>
 
     {% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% bootstrap_javascript %}
     {% endblock %}
   
