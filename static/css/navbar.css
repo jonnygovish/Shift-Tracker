@@ -1,0 +1,191 @@
+#navbar{
+  background: #0085ff;
+  height: 60px;
+  background-image: linear-gradient(135deg,rgba(0,0,0,.1),transparent);
+  box-shadow: 0 4px 8px 0 rgba(0,133,255,.2);
+  color: white;
+}
+/* .navbar-right {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  max-width: 225px
+} */
+/* .navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+  height: 60px;
+  background: #0085ff;
+  background-image: -webkit-linear-gradient(315deg,rgba(0,0,0,.1),transparent);
+  background-image: linear-gradient(135deg,rgba(0,0,0,.1),transparent);
+  box-shadow: 0 4px 8px 0 rgba(0,133,255,.2);
+} */
+/* .navbar .navbar-content {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.navbar-header {
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.navbar-main {
+  display: inline-block;
+}
+
+.navbar-right {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    max-width: 225px;
+}
+.navbar-header a {
+  display: block;
+  width: 150px;
+  height: 60px;
+  background: url(/assets/images/logo_header@2x-ab6f0c.png) no-repeat 0 50%;
+  background-size: 150px;
+}
+.navbar-main a, .navbar-main a:active, .navbar-main a:focus {
+  color: #fff;
+  display: inline-block;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 17px 10px 0;
+  letter-spacing: .5px;
+  font-size: 15px;
+  opacity: .65;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.navbar-main a.active, .navbar-main a:hover {
+  opacity: 1;
+}
+.navbar-right>button {
+  background-image: none;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  height: 60px;
+  padding: 0 20px;
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none!important;
+}
+.navbar-right>button>div avatar {
+  margin-right: 10px;
+}
+avatar {
+  display: inline;
+}
+.navbar-right>button>div .name-and-org {
+  overflow: hidden;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+  line-height: 18px;
+}
+.navbar-right>button>div>div {
+  opacity: .65;
+}
+.navbar-right>button>div .caret-container {
+  margin-left: 20px;
+}
+.navbar-right>button>div>div {
+  opacity: .65;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+b, strong {
+  font-weight: 700;
+}
+@media (min-width: 480px)
+.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.dropdown-menu .dropdown-main-ul, ul.dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.12);
+    border-radius: 4px;
+    margin: 0;
+    padding: 10px;
+    text-transform: none;
+    border: 0;
+}
+
+.navbar-right ul {
+    position: absolute;
+    right: 0;
+    left: 0!important;
+    top: 45px;
+    background: #fff;
+    height: 0;
+    z-index: 0;
+    margin: 0;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 2px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+} */
+
+
