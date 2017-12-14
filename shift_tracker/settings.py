@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default = False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
-
+LOGIN_REDIRECT_URL ='/'
 
 # Application definition
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap3',
     'shifts',
+    'fullcalendar',
 
 ]
 
