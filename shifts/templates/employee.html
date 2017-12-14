@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+
+{% block content%}
+<div class="manage-menu">
+    <div>
+      <a class="admin-dashboard active" href="/">
+        <div class="icon"></div>Dashboard 
+      </a>
+      <a class="admin-users"  href="#">
+        <div class="icon">
+        </div><strong>Profile</strong> 
+      </a>
+      <a class="admin-groups" href="#">
+        <div class="icon"></div>
+        <strong>Coworkers</strong> 
+      </a>
+    </div>
+  </div>
+  <table class="table manage-table table-fixed table-hover table-responsive">
+    <thead>
+      <tr>
+        <th>
+          <div class="center-vertically">
+          
+            <a ng-click="ctrl.sortBy('normalizedDisplayName', 'sortMethod')" ng-class="{'link-as-text': !ctrl.isSortedBy('normalizedDisplayName', 'sortMethod')}">Name  
+          </div>
+        </th>
+        <th><a  class="link-as-text">
+          Positions
+          </a>
+        </th>
+        <!---->
+        <th> <a  class="link-as-text">
+          Email
+          </a>
+        </th>
+        <!---->
+        <!---->
+        <th><a class="link-as-text">
+          Phone
+          </a>
+        </th>
+        <!---->
+        <!---->
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="vs-repeat-before-content" style="width: 100%; height: 0px;"></tr>
+      
+        {% for user in users %}
+          <tr>
+            <td>{{user.username}} {{user.employee_profile.profile_pic}} </td>
+            <td>{{user.employee_profile.position}} </td>
+            <td>{{user.email}} </td>
+            <td>{{user.employee_profile.phonenumber}} </td>
+          </tr>
+        {% endfor %}
+
+      
+  </tbody>
+</table>
+
+{% endblock %}
