@@ -82,7 +82,7 @@
                   </div>
                   <hr>
                 </div>
-                <div class="form-group clearfix user-profile-groups ng-pristine ng-valid readonly" ng-form="" ng-class="{readonly: !authentication.user.isManager}">
+                <div class="form-group clearfix user-profile-groups" >
                   <div class="row user-groups-items">
                     <div class="col-xs-11 center-vertically">
                       <span><img src="/static/images/position-gray-9514ac.svg">Positions</span>
@@ -127,41 +127,73 @@
                     {% endif %}
                     <span class="username">{{ user.username }}</span>
                   </div>
-                  <form action="" method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div class="form-group">
-                      {{ profile_form.profile_pic.label }}
-                      {{ profile_form.profile_pic }}
-                      {{ profile_form.profile_pic.errors }}
-                    </div>
-                    <div class="form-group">
-                      {{ user_form.first_name.label }} <br>
-                      {{ user_form.first_name }}
-                      {{ user_form.first_name.errors }}
-                    </div>
-                    <div class="form-group">
-                      {{ user_form.last_name.label }} <br>
-                      {{ user_form.last_name }}
-                      {{ user_form.last_name.errors }}
-                    </div>
-                    <div class="form-group">
-                      {{ user_form.email.label }} <br>
-                      {{ user_form.email }}
-                      {{ user_form.email.errors }}
-                    </div>
-                    <div class="form-group">
-                      {{ profile_form.date_of_birth.label }} <br>
-                      {{ profile_form.date_of_birth }}
-                      {{ profile_form.date_of_birth.errors }}
-                    </div>
-                    <div class="form-group">
-                      {{ profile_form.phonenumber.label }}<br>
-                      {{ profile_form.phonenumber }}
-                      {{ profile_form.phonenumber.errors }}
-                    </div>
-                    
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
+                  <div class="profile_form">
+                    <form action="" method="post" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <div class="row">
+                          <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                  {{ profile_form.profile_pic.label }}
+                                  {{ profile_form.profile_pic }}
+                                  {{ profile_form.profile_pic.errors }}
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                  {{ user_form.first_name.label }} <br>
+                                  {{ user_form.first_name }}
+                                  {{ user_form.first_name.errors }}
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                              <div class="row">
+                                <div class="form-group">
+                                  {{ user_form.last_name.label }} <br>
+                                  {{ user_form.last_name }}
+                                  {{ user_form.last_name.errors }}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="row">
+                                <div class="form-group">
+                                  {{ user_form.email.label }} <br>
+                                  {{ user_form.email }}
+                                  {{ user_form.email.errors }}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="form-group">
+                                    {{ profile_form.date_of_birth.label }} <br>
+                                    {{ profile_form.date_of_birth }}
+                                    {{ profile_form.date_of_birth.errors }}
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="form-group">
+                                    {{ profile_form.phonenumber.label }}<br>
+                                    {{ profile_form.phonenumber }}
+                                    {{ profile_form.phonenumber.errors }}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
