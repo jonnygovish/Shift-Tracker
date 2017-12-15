@@ -55,13 +55,13 @@
                   <div class="col-md-6">
                     <div class="row">
                       <h3>First Name:</h3>
-                        <span class="fields">{{user.first_name}}</span> 
+                        <div >{{user.first_name}}</div> 
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="row">
                       <h3>Last Name</h3>
-                      <span class="fields">{{user.last_name}}</span>
+                      <div >{{user.last_name}}</div>
                     </div>
                   </div>
                 </div>
@@ -70,18 +70,49 @@
                     <div class="col-md-6">
                       <div class="row">
                         <h3>Mobile</h3>
-                          <span class="fields">{{profile.phonenumber}}</span>
+                          <div>{{profile.phonenumber}}</div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="row">
                         <h3>Email</h3>
-                        <span class="fields">{{user.email}}</span>
+                        <div style="background-color: rgb(255,255,255)">{{user.email}}</div>
                       </div>
                     </div>
                   </div>
-                  <hr>  
-          </div>
+                  <hr>
+                </div>
+                <div class="form-group clearfix user-profile-groups ng-pristine ng-valid readonly" ng-form="" ng-class="{readonly: !authentication.user.isManager}">
+                  <div class="row user-groups-items">
+                    <div class="col-xs-11 center-vertically">
+                      <span><img src="/static/images/position-gray-9514ac.svg">Positions</span>
+                    </div>
+                    <div class="col-xs-5">
+                      <!---->
+                      <div  class="user-group-item" style="background-color: rgb(247, 107, 106); color: white;">{{profile.position}} 
+                      </div>
+                      <!---->
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                  <div class="form-group clearfix section-with-padding" >
+                    <div class="row center-vertically" style="height:36px;">
+                      <div class="col-xs-11">
+                        <div><p>Password</p>  
+                          <small>Click the button on the right if you need to reset your password.</small>
+                        </div>
+                      </div>
+                      <div class="col-xs-5">
+                        <button class="btn btn-primary btn-lg btn-block progress-button fill horizontal" type="button" href="/accounts/password/change">
+                          <a href="/accounts/password/change"><span class="progress-button-content" >Reset password</span> </a> 
+                          <span class="progress-button-progress">
+                            <span class="progress-button-progress-inner" style="width:0%"></span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>  
         </div>
       </div>
       <div id="edit" class="tab-pane fade">
