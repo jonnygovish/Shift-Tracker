@@ -5,6 +5,9 @@
   box-shadow: 0 4px 8px 0 rgba(0,133,255,.2);
   color: white;
 }
+nav a{
+  color: white;
+}
 /* .navbar-right {
   position: absolute;
   right: 10px;
