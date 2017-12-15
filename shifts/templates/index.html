@@ -18,7 +18,7 @@
       <a class="admin-dashboard active" href="/">
         <div class="icon"></div>Dashboard 
       </a>
-      <a class="admin-users"  href="{% url 'profile' request.user.username %}">
+      <a class="admin-users"  href="{% url 'profile' user.username %}">
         <div class="icon">
         </div><strong>Profile</strong> 
       </a>
@@ -28,6 +28,7 @@
       </a>
     </div>
   </div>
+  
   <table class="table manage-table table-fixed table-hover table-responsive">
     <thead>
       <tr>
