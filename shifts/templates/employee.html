@@ -7,11 +7,11 @@
       <a class="admin-dashboard active" href="/">
         <div class="icon"></div>Dashboard 
       </a>
-      <a class="admin-users"  href="#">
+      <a class="admin-users"  href="{% url 'profile' request.user.username %}">
         <div class="icon">
         </div><strong>Profile</strong> 
       </a>
-      <a class="admin-groups" href="#">
+      <a class="admin-groups" href="{% url 'employees'%}">
         <div class="icon"></div>
         <strong>Coworkers</strong> 
       </a>
@@ -50,7 +50,7 @@
       
         {% for user in users %}
           <tr>
-            <td>{{user.username}} {{user.employee_profile.profile_pic}} </td>
+            <td>{{user.username}}</td>
             <td>{{user.employee_profile.position}} </td>
             <td>{{user.email}} </td>
             <td>{{user.employee_profile.phonenumber}} </td>
