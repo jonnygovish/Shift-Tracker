@@ -42,7 +42,7 @@ body{
   transition: all .2s ease-in-out;
 }
 .manage-menu a.admin-dashboard.active .icon{
-  background-image: url(/static/dashboard-blue-47b394.svg);
+  background-image: url(/static/images/dashboard-blue-47b394.svg);
 }
 .manage-menu a .icon{
   height: 48px;
