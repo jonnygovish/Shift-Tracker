@@ -22,7 +22,12 @@
         <div>
           {% if user.is_authenticated %}
           <ul>
-            <li class="dropdown">
+            <li class="dropdown navbar-username">
+              {% if user.employee_profile.profile_pic %}
+                <img class="picture-circle--medium navbar-username" src="{{ user.employee_profile.profile_pic.url }}">
+              {% else %}
+                <img class="picture-circle--medium navbar-username" src="{% static 'images/profile_placeholder.jpg' %}">
+              {% endif %}
               <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false">{{user.username}}
                 <span class="caret"></span>
               </a>
