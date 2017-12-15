@@ -7,7 +7,7 @@ As a user I would be able to
 * Sign in to the application to start using
 * View my shifts for each day
 * View other peoples shift
-* Request other people to cover my shift.
+
 
 
 
