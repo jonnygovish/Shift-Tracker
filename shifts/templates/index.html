@@ -12,28 +12,30 @@
 
 
 {% block content %}
-<div class="manage-menu">
-  <div>
-    <a class="admin-dashboard active" href="/">
-      <div class="icon"></div>Dashboard 
-    </a>
-    <a class="admin-users"  href="{% url 'profile' request.user.username %}">
-      <div class="icon">
-      </div><strong>Profile</strong> 
-    </a>
-    <a class="admin-groups" href="{% url 'employees'%} ">
-      <div class="icon"></div>
-      <strong>Coworkers</strong> 
-    </a>
+<div class="loa"></div>
+<div style= id="myDiv">
+  <div class="manage-menu animate-bottom"  id="myDiv">
+    <div>
+      <a class="admin-dashboard active" href="/">
+        <div class="icon"></div>Dashboard 
+      </a>
+      <a class="admin-users"  href="{% url 'profile' request.user.username %}">
+        <div class="icon">
+        </div><strong>Profile</strong> 
+      </a>
+      <a class="admin-groups" href="{% url 'employees'%} ">
+        <div class="icon"></div>
+        <strong>Coworkers</strong> 
+      </a>
+    </div>
   </div>
-</div>
-<table class="table manage-table table-fixed table-hover table-responsive">
+  <table class="table manage-table table-fixed table-hover table-responsive">
     <thead>
       <tr>
         <th>
           <div class="center-vertically">
           
-            <a ></a>Shift 
+            <a></a>Shift 
           </div>
         </th>
         <th><a  class="link-as-text">
@@ -67,23 +69,32 @@
     </thead>
     <tbody>
       <tr class="vs-repeat-before-content" style="width: 100%; height: 0px;"></tr>
-      {% for shift in shifts%}
-        <tr>
-          <!-- <td>{{shift.shift_name}} </td> -->
-          {% if shift.day_of_the_week == 'M' %}
-          <!-- <td>{{shift.employee}} </td> -->
-          {% endif%}
-          {% if shift.day_of_the_week == 'Tu'%}
-          <!-- <td>{{shift.employee}} </td> -->
-          {% endif %}
+        <tr class="info">
+          <td>Morning Shift</td>
+          <td>Carol Wanjohi</td>
+          <td>Gitu Mbugua</td>
+          <td>Mweru Muchai</td>
+          <td>Virginia Ndung'u</td>
+          <td>Peter Maina</td>
         </tr>
-
-      {% endfor %}
-        
-  </tbody>
-</table>
-{% if shift.day_of_the_week == 'M' %}
-{{shift.employee}}
-{% endif%}
+        <tr class="success">
+          <td>Evening Shift</td>
+          <td>Erick Mutua</td>
+          <td>David Njoroge</td>
+          <td>Khalid</td>
+          <td>Apiut Toel</td>
+          <td>Neville</td>
+        </tr>
+        <tr class="danger">
+          <td>Night shift</td>
+          <td>John Mutavi</td>
+          <td>Grantone Mchana</td>
+          <td>Latasha Wanjira</td>
+          <td>Elijah Osoro</td>
+          <td>Kiongo Mburu</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
 {% calendar %}
 {% endblock %}
